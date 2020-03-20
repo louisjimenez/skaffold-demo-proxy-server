@@ -1,0 +1,11 @@
+apiVersion: skaffold/v2alpha4
+kind: Config
+metadata:
+  name: proxy-server
+build:
+  artifacts:
+  - image: proxy-server
+deploy:
+  kubectl:
+    manifests:
+    - kubernetes/deployment.yaml

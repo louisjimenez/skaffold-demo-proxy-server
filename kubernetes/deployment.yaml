@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proxy-server
+  namespace: default
+  labels:
+    app: proxy-server
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: proxy-server
+  template:
+    metadata:
+      labels:
+        app: proxy-server
+    spec:
+      containers:
+        - name: proxy-server
+          image: proxy-server

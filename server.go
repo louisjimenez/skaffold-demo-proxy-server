@@ -5,7 +5,7 @@ import (
 	"google.golang.org/grpc"
 	"log"
 	"net"
-	pb "github.com/louisjimenez/skaffold-demo-proxy-server/todo"
+	pb "github.com/louisjimenez/skaffold-demo-config"
 )
 
 const (
